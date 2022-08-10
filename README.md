@@ -36,3 +36,17 @@ When you are ready to deploy your application, run:
 ```
 wrangler publish
 ```
+
+## Usage
+Sample request:
+```
+curl -i -X GET "http://localhost:8787/?content=Xin chaof các bạn"
+```
+Sample response:
+```
+{
+  "result":[
+    "chaof"
+  ]
+}
+```
