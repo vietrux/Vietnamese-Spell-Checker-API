@@ -48,8 +48,6 @@ async function handleRequest(request) {
   const content_length = contents.length;
   const filtered = contents.filter(function (n) { return n != '' });
   let result = [];
-  //para_list[i].status = true; //đã check
-  //para_list[i].word //tu can check
   for (let i = 0; i < filtered.length; i++) {
     if (!dict_word_list.includes(replace_str(filtered[i], special_charactor, ''))) {
       var long_word = "";
